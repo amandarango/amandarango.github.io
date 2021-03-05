@@ -1,18 +1,79 @@
 /*
 Colors used:
+Soft Black: #252525
+Faded Denim: #798EA4
+Ice Flow: #C5D2D3
+Iceberg Green: #8C9C92
+/* Pearl Blush: #F3D1C8 */
 
-Fonts used:
-Brandon Grotesque Regular
-font-family: brandon-grotesque,sans-serif;
-font-weight: 400;
-font-style: normal; */
+body {
+  font-family: 'brandon-grotesque', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+}
 
-/* Brandon Grotesque Regular Italic
-font-family: brandon-grotesque,sans-serif;
-font-weight: 400;
-font-style: italic; */
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
 
-/* Brandon Grotesque Regular Bold
-font-family: brandon-grotesque,sans-serif;
-font-weight: 700;
-font-style: normal; */
+header {
+  height: 129px;
+  max-width: 1440px;
+  z-index: 3;
+  background-color: white;
+  color: #252525;
+  position: sticky;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header-container {
+  margin-left: 40px;
+  margin-right: 40px;
+  height: 100%;
+}
+
+.main-logo {
+  display: inline-block;
+  float: left;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+nav {
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  float: right;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding-inline-start: 0px;
+}
+
+nav > ul > li {
+  display: inline-block;
+  padding-left: 40px;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 24px;
+  color: #252525;
+  background-color: white;
+  letter-spacing: -0.5px;
+}
+
+nav > ul > li:last-child > a {
+  background-color: #798EA4;
+  color: white;
+  border-radius: 30px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
