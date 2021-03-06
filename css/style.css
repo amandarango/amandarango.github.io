@@ -20,7 +20,7 @@ h1 {
 
 header {
   height: 129px;
-  max-width: 1440px;
+  max-width: 1401px;
   z-index: 3;
   background-color: white;
   color: #252525;
@@ -40,6 +40,14 @@ header {
   float: left;
   padding-top: 32px;
   padding-bottom: 32px;
+}
+
+.main-logo > svg {
+  width: 180px;
+}
+
+.main-logo-sm {
+  display: none;
 }
 
 nav {
@@ -62,7 +70,7 @@ nav > ul > li {
 nav > ul > li > a {
   text-decoration: none;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 18px;
   color: #252525;
   background-color: white;
   letter-spacing: -0.5px;
@@ -76,4 +84,97 @@ nav > ul > li:last-child > a {
   padding-bottom: 13px;
   padding-left: 32px;
   padding-right: 32px;
+}
+
+.nav-sm {
+  display: none;
+}
+
+/* Override: On screens that are 1120px wide or less */
+@media screen and (max-width: 1120px) {
+  nav > ul > li {
+    padding-left: 24px;
+  }
+}
+
+/* Override: On screens that are 1024px wide or less */
+@media screen and (max-width: 1024px) {
+  .main-logo-sm {
+    display: inline-block;
+    float: left;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .main-logo {
+    display: none;
+  }
+}
+
+/* Override: On screens that are 936px wide or less */
+@media screen and (max-width: 936px) {
+  nav > ul > li > a {
+    font-size: 16px;
+  }
+  nav > ul > li:last-child > a {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+/* Override: On screens that are 858px wide or less */
+@media screen and (max-width: 858px) {
+  nav > ul > li:last-child > a {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+  nav > ul > li {
+    padding-left: 18px;
+  }
+}
+
+/* Override: On screens that are 810px wide or less */
+@media screen and (max-width: 810px) {
+  .nav-sm {
+    display: inline-block;
+    padding-top: 52px;
+    padding-bottom: 52px;
+    float: right;
+  }
+  nav {
+    display: none;
+  }
+  .main-logo-sm {
+    display: none;
+  }
+  .main-logo {
+    display: inline-block;
+  }
+}
+
+/* Override: On screens that are 375px wide or less */
+@media screen and (max-width: 375px) {
+  header {
+    height: 100px;
+  }
+  .header-container {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .nav-sm {
+    padding-top: 38px;
+    padding-bottom: 37px;
+  }
+  .main-logo-sm {
+    display: none;
+  }
+  .main-logo {
+    display: inline-block;
+    float: left;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 }
