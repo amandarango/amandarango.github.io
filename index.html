@@ -41,7 +41,7 @@
   <header>
     <div class="header-container">
 
-      <!--This division contains the logo-->
+      <!--This division contains the logo (only one is shown at a time depending on screen size)-->
       <div class="main-logo">
         <svg width="228px" height="65px" viewBox="0 0 228 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
           <title>logo-secondary</title>
@@ -71,7 +71,7 @@
           </g>
         </svg>
       </div>
-
+      <!--This contains the centered logo (only one is shown at a time depending on screen size)-->
       <div class="main-logo-sm">
         <svg width="92px" height="96px" viewBox="0 0 92 96" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <title>smscreenlogo</title>
@@ -102,7 +102,7 @@
         </svg>
       </div>
 
-      <!--This is the navigation-->
+      <!--This is the navigation for larger screens (spread out across the top)-->
       <nav>
         <!--This represents the list of items living within the navigation-->
         <ul>
@@ -117,9 +117,9 @@
         </ul>
       </nav>
 
-    <!--This is the navigation for smaller screens-->
-    <div class="nav-sm">
-      <svg width="39px" height="25px" viewBox="0 0 39 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <!--This is the navigation for smaller screens (hamburger icon)-->
+      <a href="javascript:void(0);" class="hamburger" onclick="myFunction()">
+        <svg width="39px" height="25px" viewBox="0 0 39 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
           <title>Group 3</title>
           <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
               <g id="12.9″-iPad-Pro" transform="translate(-945.000000, -50.000000)" fill="#252525">
@@ -130,19 +130,43 @@
                   </g>
               </g>
           </g>
-      </svg>
+      </a>
+      </div>
+      <div id="myLinks">
+        <a class="links" href="services.html">Design Services</a>
+        <a class="links" href="about.html">Our Story</a>
+        <a class="links" href="work.html">Transformations</a>
+        <a class="links" href="faq.html">FAQ</a>
+        <a class="links" href="contact.html">Contact</a>
+        <a class="cta_button" href="https://forms.gle/JKvJms2fUAxfbCvJ9" target="_blank">Get a FREE Consultation</a>
+      </div>
     </div>
-
   </header>
 
   <!--Main includes what makes each page different.-->
   <main>
+    <!--Hero Text and Image-->
+    <div>
+      <div class="40-percent">
+        <h1>Discover peace and joy with a room refresh.</h1>
+        <p>Meet with a Designer to transform or organize your space. Offering Virtual & In-Home* services.</p>
+        <a class="black-button">Learn More about our Services</a>
+        <p class="caption">*Serving the Columbus, OH region for In-Home appointments.</p>
+      </div>
+      <picture class="60-percent">
+        <img src="img/yoga-room.jpg" alt="Yoga Room Picture">
+      </picture>
+    </div>
+
   </main>
 
   <!--This is the footer. If you must change, make sure to apply to all html pages-->
   <footer>
   </footer>
 
+  <!--This points to your Javascript file which adds functionality to your site-->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
