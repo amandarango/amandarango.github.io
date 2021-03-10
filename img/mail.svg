@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="28px" viewBox="0 0 34 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>mail</title>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g transform="translate(-1184.000000, -3753.000000)" id="Footer" stroke="#FFFFFF" stroke-width="2">
+            <g transform="translate(0.000000, 3585.000000)">
+                <g id="Group-13" transform="translate(1031.000000, 166.000000)">
+                    <g id="mail" transform="translate(154.000000, 3.000000)">
+                        <path d="M3.2,0 L28.8,0 C30.56,0 32,1.4625 32,3.25 L32,22.75 C32,24.5375 30.56,26 28.8,26 L3.2,26 C1.44,26 0,24.5375 0,22.75 L0,3.25 C0,1.4625 1.44,0 3.2,0 Z" id="Path"></path>
+                        <polyline id="Path" points="32 3.25 16 14.625 0 3.25"></polyline>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
