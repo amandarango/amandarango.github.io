@@ -234,6 +234,47 @@ main {
   color: #252525;
 }
 
+.contact-container {
+  max-width: 1219px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.contact-left {
+  padding-left: 91px;
+  padding-right: 91px;
+  margin: auto;
+  width: 50%;
+}
+
+.contact-right {
+  padding-left: 91px;
+  padding-right: 91px;
+  margin: auto;
+  width: 50%;
+}
+
+.contact-circle {
+  display: flex;
+  width: 100%;
+  height: 59px;
+}
+
+.contact-circle > a {
+  padding-left: 13px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
 .about-container {
   overflow: hidden;
   max-width: 1401px;
@@ -268,6 +309,33 @@ input {
       text-align: center;
       vertical-align: middle;
     }
+
+#name-input, #email-input, #message-input {
+  color: rgba(37, 37, 37, 0.5);
+  border-radius: 0px;
+  text-align: left;
+  border: 1px solid rgba(37, 37, 37, 0.5);
+  margin-top: 10px;
+  padding: 10px;
+  width: 444px;
+  font-size: 18px;
+}
+
+#name-input {
+  margin-top: 91px;
+  margin-bottom: 0px;
+}
+
+#message-input {
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+#submit {
+  margin-top: 32px;
+  margin-bottom: 91px;
+  height: 60px;
+}
 
 footer {
   height: 365px;
