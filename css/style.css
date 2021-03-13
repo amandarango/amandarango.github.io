@@ -124,7 +124,7 @@ nav > ul > li:last-child > a {
 }
 
 nav > ul > li:last-child > a:hover {
-  opacity: 0.6;
+  background-color: #252525;
 }
 
 .hamburger {
@@ -164,6 +164,8 @@ main {
   max-width: 1401px;
   margin: 0 auto;
   background-image: url(../img/light-pattern.png);
+  height: 500px;
+  overflow: hidden;
 }
 
 .hero {
@@ -213,10 +215,11 @@ main {
   padding-left: 35px;
   padding-right: 35px;
   text-decoration: none;
+  font-weight: 500;
 }
 
 .main-button:hover {
-  opacity: 0.6;
+  background-color: #252525;
 }
 
 .caption {
@@ -335,6 +338,21 @@ input {
   margin-top: 32px;
   margin-bottom: 91px;
   height: 60px;
+}
+
+#success, #fail {
+  display: none;
+}
+
+.black-button {
+  background-color: #252525;
+  color: white;
+  border-radius: 30px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 32px;
+  padding-right: 32px;
+  border-color: #252525;
 }
 
 footer {
