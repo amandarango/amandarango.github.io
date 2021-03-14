@@ -423,7 +423,20 @@ footer {
 @media screen and (max-width: 1170px) {
   nav>ul>li:first-child {
     padding-left:0px;
-
+  }
+  .about-container {
+    display: none !important;
+  }
+  .about-container-sm {
+    display: block !important;
+  }
+  .about-container-sm > p {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .last-paragraph {
+    padding-bottom: 40px;
+    margin-bottom: 0;
   }
 }
 
@@ -529,6 +542,10 @@ h2 {
 .main-button {
   padding-left: 24px;
   padding-right: 24px;
+}
+.about-container-sm > picture > img {
+  width: 500px;
+  height: auto;
 }
 }
 
@@ -660,6 +677,10 @@ h2 {
     text-align: center;
     padding-left: 0px;
   }
+  .about-container-sm > picture > img {
+    width: 400px;
+    height: auto;
+  }
 }
 
 /* Override: On screens that are 800px wide or less */
@@ -707,6 +728,12 @@ h2 {
   #package > .blue-box {
     order: 2;
   }
+  .about-container-sm {
+    display: none !important;
+  }
+  .about-container-xs {
+    display: block !important;
+  }
 }
 
 /* Override: On screens that are 510px wide or less */
@@ -735,6 +762,10 @@ h2 {
     padding-bottom: 60px;
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .about-container-sm > picture > img {
+    width: 100%;
+    height: auto;
   }
 }
 
