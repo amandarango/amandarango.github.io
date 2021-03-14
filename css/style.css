@@ -683,7 +683,7 @@ h2 {
   .blue-box {
     height: 400px !important;
   }
-  .blue-box > svg {
+  .blue-box > img {
     padding-top: 60px !important;
   }
   .blue-box > h2 {
