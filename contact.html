@@ -32,7 +32,7 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 
   <!-- Tells browser to show the appropriate width of the webpage depending on width of the screen -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1 minimum-scale=1">
 </head>
 
 <body>
@@ -42,7 +42,7 @@
     <div class="header-container">
 
       <!--This division contains the logo (only one is shown at a time depending on screen size)-->
-      <a href="index.html" class="main-logo">
+      <a href="index.html" style="width: 190px;" class="main-logo">
         <svg width="228px" height="65px" viewBox="0 0 228 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
           <title>logo-secondary</title>
           <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -101,6 +101,7 @@
             </g>
         </svg>
       </a>
+
       <!--This is the navigation for larger screens (spread out across the top)-->
       <nav>
         <!--This represents the list of items living within the navigation-->
@@ -117,7 +118,7 @@
       </nav>
 
       <!--This is the navigation for smaller screens (hamburger icon)-->
-      <a href="javascript:void(0);" class="hamburger" onclick="myFunction()">
+      <a href="javascript:void(0);" class="hamburger" style="display: none;" onclick="myFunction()">
         <svg width="39px" height="25px" viewBox="0 0 39 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
           <title>Group 3</title>
           <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
