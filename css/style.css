@@ -263,7 +263,7 @@ input {
 
 .quote {
   background-image: url(../img/light-pattern.png);
-  height: 510px;
+  height: 550px;
 }
 
 .quote-text {
@@ -418,8 +418,8 @@ footer {
   }
 }
 
-/* Override: On screens that are 1120px wide or less */
-@media screen and (max-width: 1120px) {
+/* Override: On screens that are 1150px wide or less */
+@media screen and (max-width: 1150px) {
   .copyright {
     font-size: 0.8em;
   }
@@ -441,6 +441,21 @@ footer {
   }
   .blue-box > svg {
     padding-top: 140px !important;
+  }
+  nav > ul > li > a {
+    font-size: 16px;
+  }
+  nav > ul > li:first-child > a {
+    padding-left: 0px;
+  }
+  nav > ul > li:last-child > a {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .main-logo > svg {
+    width: 200px;
   }
 }
 
@@ -472,16 +487,6 @@ footer {
 }
 
 /* Override: On screens that are 936px wide or less */
-@media screen and (max-width: 936px) {
-  nav > ul > li > a {
-    font-size: 16px;
-  }
-  nav > ul > li:last-child > a {
-    padding-top: 13px;
-    padding-bottom: 13px;
-    padding-left: 24px;
-    padding-right: 24px;
-  }
   .hero-text, .hero-image {
     display: block;
     float: none;
