@@ -420,6 +420,17 @@ footer {
     padding-left: 60px;
     width: 50%;
   }
+  .blue-box > h2 {
+    padding-left: 150px !important;
+    padding-right: 150px !important;
+  }
+  .quote-text {
+    padding-top: 125px;
+    padding-bottom: 125px;
+  }
+  .blue-box > svg {
+    padding-top: 140px !important;
+  }
 }
 
 /* Override: On screens that are 1024px wide or less */
@@ -432,6 +443,20 @@ footer {
   }
   .main-logo {
     display: none;
+  }
+  .quote-text {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .blue-box > h2 {
+    padding-left: 130px !important;
+    padding-right: 130px !important;
+  }
+  .quote {
+    height: 405px;
+  }
+  .quote-text > h3 {
+    font-size: 24px;
   }
 }
 
@@ -449,6 +474,13 @@ footer {
   .hero-text, .hero-image {
     display: block;
     float: none;
+  }
+  h1 {
+    font-size: 44px;
+  }
+  .blue-box > h2 {
+    padding-left: 100px !important;
+    padding-right: 100px !important;
   }
 }
 
@@ -469,11 +501,11 @@ footer {
   }
   .hero-container {
     display: block;
-    padding: 40px;
+
   }
-  .hero-image {
+  /* .hero-image {
     display: none;
-  }
+  } */
   .hero-text {
     padding-left: 40px;
     padding-right: 40px;
@@ -589,7 +621,7 @@ footer {
     padding-right: 20px;
   }
   .hamburger, .faq-container {
-    padding-top: 30px;
+    padding-top: 50px;
     padding-bottom: 30px;
   }
   .main-logo-sm {
@@ -598,7 +630,7 @@ footer {
   .main-logo {
     display: inline-block;
     float: left;
-    padding-top: 16px;
+    padding-top: 26px;
     padding-bottom: 16px;
   }
   footer {
@@ -609,5 +641,38 @@ footer {
   }
   .copyright, .footer-icons {
     float: none;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 16px;
+  }
+  .hero-container {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 40px;
+    flex-direction: column;
+  }
+  .hero-image {
+    padding-left: 0px;
+    order: 1;
+    width: 100%;
+  }
+  .hero-text {
+    padding: 0px;
+    width: 100%;
+    order: 2;
+  }
+  .hero-image > img {
+    width: 384px;
+    height: 384px;
+  }
+  .main-button {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .caption {
+    font-size: 0.6em;
   }
 }
