@@ -23,28 +23,24 @@ body {
 }
 
 h1 {
-  font-family: 'brandon-grotesque', sans-serif;
   font-size: 48px;
   font-weight: 500;
-  line-height: 1.5;
   margin: 0;
 }
 
 h2 {
-  font-family: 'brandon-grotesque', sans-serif;
   font-size: 22px;
   font-weight: 400;
-  line-height: 1.5;
-  margin: 0;
 }
 
 h3 {
-  font-family: 'brandon-grotesque', sans-serif;
   font-size: 30px;
   font-weight: 400;
   font-style: italic;
-  line-height: 1.5;
-  margin: 0;
+}
+
+.caption {
+  font-size: 14px;
 }
 
 header {
@@ -61,7 +57,6 @@ header {
 .header-container {
   padding-left: 40px;
   padding-right: 40px;
-  height: 100%;
   max-width: 1401px;
   margin: 0 auto;
 }
@@ -74,10 +69,14 @@ header {
 }
 
 .main-logo > svg {
-  width: 180px;
+  width: 190px;
 }
 
 .main-logo-sm {
+  display: none;
+}
+
+.hamburger {
   display: none;
 }
 
@@ -127,10 +126,6 @@ nav > ul > li:last-child > a:hover {
   background-color: #252525;
 }
 
-.hamburger {
-  display: none;
-}
-
 #myLinks {
   display: none;
 }
@@ -159,15 +154,6 @@ main {
   width: 100%;
 }
 
-.quote {
-  align-items: center;
-  max-width: 1401px;
-  margin: 0 auto;
-  background-image: url(../img/light-pattern.png);
-  height: 500px;
-  overflow: hidden;
-}
-
 .hero {
   background-color: #C5D2D3;
   color: #252525;
@@ -188,6 +174,15 @@ main {
   padding-left: 80px;
   display: block;
   width: 40%;
+}
+
+.quote {
+  align-items: center;
+  max-width: 1401px;
+  margin: 0 auto;
+  background-image: url(../img/light-pattern.png);
+  height: 500px;
+  overflow: hidden;
 }
 
 .quote-text {
@@ -220,10 +215,6 @@ main {
 
 .main-button:hover {
   background-color: #252525;
-}
-
-.caption {
-  font-size: 0.75em;
 }
 
 .faq-container {
@@ -282,7 +273,6 @@ main {
   overflow: hidden;
   max-width: 1401px;
   margin: 0 auto;
-  display: block;
   padding: 91px;
 }
 
@@ -398,12 +388,32 @@ footer {
   justify-content: space-evenly;
 }
 
+/* Override: On screens that are 1410px or less */
+@media screen and (max-width: 1410px) {
+  .about-container {
+    padding: 40px;
+  }
+}
+
 /* Override: On screens that are 1355px or less */
 @media screen and (max-width: 1355px) {
   .break {
     display: none;
   }
 }
+
+/* Override: On screens that are 1308px or less */
+@media screen and (max-width: 1308px) {
+  .about-text br { content: ' '; }
+  }
+}
+
+/* Override: On screens that are 1263px or less */
+@media screen and (max-width: 1263px) {
+  .
+
+}
+
 /* Override: On screens that are 1120px wide or less */
 @media screen and (max-width: 1120px) {
   nav > ul > li {
@@ -416,9 +426,13 @@ footer {
     padding-left: 24px;
     padding-right: 24px;
   }
-  .hero-text, .hero-image {
+  .hero-text {
     padding-left: 60px;
     width: 50%;
+  }
+  .hero-image {
+    padding-left: 60px;
+    width: 60%;
   }
   .blue-box > h2 {
     padding-left: 150px !important;
@@ -476,11 +490,25 @@ footer {
     float: none;
   }
   h1 {
-    font-size: 44px;
+    font-size: 42px;
+  }
+  h2 {
+    font-size: 20px;
   }
   .blue-box > h2 {
     padding-left: 100px !important;
     padding-right: 100px !important;
+  }
+  .quote-text {
+    padding-left: 115px;
+    padding-right: 115px;
+  }
+  .quote {
+    height: 375px;
+  }
+  .main-button {
+    padding-left: 24px;
+    padding-right: 24px;
   }
 }
 
@@ -516,15 +544,12 @@ footer {
   h1 {
     font-size: 40px;
   }
-  h2 {
-    font-size: 20px;
-  }
 }
 
 /* Override: On screens that are 810px wide or less */
 @media screen and (max-width: 810px) {
   .hamburger {
-    display: inline-block;
+    display: inline-block !important;
     padding-top: 54px;
     padding-bottom: 30px;
     float: right;
