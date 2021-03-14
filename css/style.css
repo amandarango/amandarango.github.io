@@ -166,7 +166,7 @@ input {
   color: #252525;
   width: 300px;
   height: 40px;
-  border: 3px solid black;
+  border: 3px solid #252525;
   border-radius: 30px;
   text-align: center;
   vertical-align: middle;
@@ -341,6 +341,13 @@ input {
   padding-left: 40px;
 }
 
+.work-container {
+  padding: 91px;
+  max-width: 1401px;
+  margin: 0 auto;
+  text-align: left;
+}
+
 /* Footer Stylings */
 footer {
   height: 365px;
@@ -387,7 +394,7 @@ footer {
 
 /* Override: On screens that are 1410px or less */
 @media screen and (max-width: 1410px) {
-  .about-container, .faq-container, .contact-container {
+  .about-container, .faq-container, .contact-container, .work-container {
     padding: 40px;
   }
 }
@@ -404,7 +411,6 @@ footer {
   .about-text br {
     content: ' ';
   }
-}
 }
 
 /* Override: On screens that are 1263px or less */
@@ -439,7 +445,6 @@ footer {
     margin-bottom: 0;
   }
 }
-
 
 /* Override: On screens that are 1150px wide or less */
 @media screen and (max-width: 1150px) {
@@ -520,6 +525,10 @@ footer {
 
   .quote-text>h3 {
     font-size: 24px;
+  }
+  .contact-left, .contact-right {
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 
@@ -860,5 +869,5 @@ h2 {
   }
   .about-container-xs > picture > img {
     height: 400px;
-}
+  }
 }
