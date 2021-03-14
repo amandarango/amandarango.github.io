@@ -341,11 +341,16 @@ input {
   padding-left: 40px;
 }
 
+/* Transformation Page Stylings */
 .work-container {
   padding: 91px;
   max-width: 1401px;
   margin: 0 auto;
   text-align: left;
+}
+
+.side-by-side {
+  width: 48% !important;
 }
 
 /* Footer Stylings */
@@ -411,6 +416,10 @@ footer {
   .about-text br {
     content: ' ';
   }
+  .before, .after {
+    margin: auto;
+  }
+
 }
 
 /* Override: On screens that are 1263px or less */
@@ -750,6 +759,9 @@ h2 {
     object-fit: cover;
     width: 100%;
     height: 700px;
+  }
+  .side-by-side {
+    flex-basis: 100%;
   }
 }
 
