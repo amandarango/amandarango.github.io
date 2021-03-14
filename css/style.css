@@ -419,6 +419,15 @@ footer {
   }
 }
 
+/* Override: On screens that are 1170px wide or less */
+@media screen and (max-width: 1170px) {
+  nav>ul>li:first-child {
+    padding-left:0px;
+
+  }
+}
+
+
 /* Override: On screens that are 1150px wide or less */
 @media screen and (max-width: 1150px) {
   .copyright {
@@ -493,7 +502,7 @@ footer {
   }
 
   .quote {
-    height: 405px;
+    height: 100%;
   }
 
   .quote-text>h3 {
@@ -502,100 +511,90 @@ footer {
 }
 
 /* Override: On screens that are 936px wide or less */
+@media screen and (max-width: 936px) {
 .hero-text, .hero-image {
   display: block;
   float: none;
 }
-
 h1 {
   font-size: 42px;
 }
-
 h2 {
   font-size: 20px;
 }
-
 .blue-box>h2 {
   padding-left: 100px !important;
   padding-right: 100px !important;
 }
-
-.quote-text {
-  padding-left: 115px;
-  padding-right: 115px;
-}
-
-.quote {
-  height: 375px;
-}
-
 .main-button {
   padding-left: 24px;
   padding-right: 24px;
 }
 }
 
-/* Override: On screens that are 858px wide or less */
-@media screen and (max-width: 858px) {
+/* Override: On screens that are 914px wide or less */
+@media screen and (max-width: 914px) {
   nav>ul>li:last-child>a {
     padding-top: 13px;
     padding-bottom: 13px;
     padding-left: 18px;
     padding-right: 18px;
   }
-
   nav>ul>li {
-    padding-left: 18px;
+    padding-left: 30px;
   }
-
   .footer-container {
     padding-left: 18px;
     padding-right: 18px;
   }
-
-  .hero-container {
+  .hero-image {
     display: block;
-  }
-
-  /* .hero-image {
-    display: none;
-  } */
-  .hero-text {
     padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 40px;
+  }
+  .hero-text {
+    padding: 0px;
     text-align: center;
     margin: 0 auto;
+    display: block;
   }
-
   h1 {
     font-size: 40px;
   }
 }
 
-/* Override: On screens that are 810px wide or less */
-@media screen and (max-width: 810px) {
+/* Override: On screens that are 854px wide or less */
+@media screen and (max-width: 854px) {
   .hamburger {
     display: inline-block !important;
     padding-top: 54px;
     padding-bottom: 30px;
     float: right;
   }
-
   nav {
     display: none;
   }
-
   .main-logo-sm {
     display: none;
   }
-
   .main-logo {
     display: inline-block;
     padding-top: 22px;
     padding-bottom: 22px;
   }
-
+  .hero-container {
+    display: block;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-top: 40px;
+    height: 100% !important;
+  }
+  .hero-image {
+    width: 500px;
+    padding: 0px;
+  }
+  .hero-text {
+    width: 100%;
+  }
   .cta_button {
     background-color: #798EA4;
     color: white;
@@ -610,11 +609,9 @@ h2 {
     letter-spacing: -0.5px;
     align-items: center;
   }
-
   .cta_button:hover {
     opacity: 0.6;
   }
-
   .links {
     color: #252525;
     font-size: 16px;
@@ -626,7 +623,6 @@ h2 {
     margin-left: 20px;
     padding-top: 8px;
   }
-
   #myLinks {
     background-color: white;
     padding-bottom: 24px;
@@ -637,22 +633,32 @@ h2 {
     right: 0;
     z-index: 2;
   }
-
   .last-link {
     margin-bottom: 24px;
   }
-
   .header-container {
     height: auto;
   }
-
   .footer-logo, .footer-icons, .copyright {
     transform: scale(0.70);
   }
+  .how-it-works-img > img {
+    height: 400px;
+  }
+  .blue-box {
+    height: 400px !important;
+  }
+  .blue-box > svg {
+    padding-top: 60px !important;
+  }
+  .blue-box > h2 {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+  }
 }
 
-/* Override: On screens that are 700px wide or less */
-@media screen and (max-width: 700px) {
+/* Override: On screens that are 800px wide or less */
+@media screen and (max-width: 800px) {
   .footer-logo, .footer-icons {
     display: block;
     float: none;
@@ -661,22 +667,40 @@ h2 {
     padding-top: 10px;
     margin: 0 auto;
   }
-
   .footer-icons {
     display: flex;
     justify-content: space-evenly;
   }
-
   .copyright {
     display: none;
   }
-
   footer {
     height: 300px;
   }
-
   .faq-container {
     padding: 40px;
+  }
+  .quote-text>h3 {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .blue-box, .how-it-works-img {
+    float: none !important;
+    width: 100% !important;
+  }
+  .how-it-works-img > img {
+    width: 100%;
+    height: 100%;
+  }
+  #package {
+    display: flex;
+    flex-direction: column;
+  }
+  #package > .how-it-works-img {
+    order: 1;
+  }
+  #package > .blue-box {
+    order: 2;
   }
 }
 
@@ -750,9 +774,5 @@ h2 {
   .main-button {
     padding-left: 15px;
     padding-right: 15px;
-  }
-
-  .caption {
-    font-size: 0.6em;
   }
 }
