@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="34px" viewBox="0 0 34 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>instagram</title>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g transform="translate(-1030.000000, -3750.000000)" id="Footer" stroke="#FFFFFF" stroke-width="2">
+            <g transform="translate(0.000000, 3585.000000)">
+                <g id="instagram" transform="translate(1031.000000, 166.000000)">
+                    <rect id="Rectangle" x="0" y="0" width="32" height="32" rx="5"></rect>
+                    <path d="M22.4,14.992 C22.8049959,17.7231546 21.4128414,20.4061512 18.9466024,21.6474782 C16.4803635,22.8888051 13.4960777,22.408593 11.5437423,20.4562577 C9.59140695,18.5039223 9.11119493,15.5196365 10.3525218,13.0533976 C11.5938488,10.5871586 14.2768454,9.1950041 17.008,9.6 C19.7967628,10.0135385 21.9864615,12.2032372 22.4,14.992 Z" id="Path"></path>
+                    <line x1="24.8" y1="7.2" x2="24.816" y2="7.2" id="Path"></line>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
