@@ -6,6 +6,7 @@ Ice Flow: #C5D2D3
 Iceberg Green: #8C9C92
 Pearl Blush: #F3D1C8 */
 
+/* General and text stylings */
 html, body {
   margin-top: 0;
   padding-top: 0;
@@ -20,6 +21,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   margin: 0;
+  color: #252525;
 }
 
 h1 {
@@ -39,15 +41,11 @@ h3 {
   font-style: italic;
 }
 
-.caption {
-  font-size: 14px;
-}
-
+/* Header stylings */
 header {
   height: 129px;
   z-index: 3;
   background-color: white;
-  color: #252525;
   position: fixed;
   width: 100%;
   top: 0px;
@@ -59,6 +57,7 @@ header {
   padding-right: 40px;
   max-width: 1401px;
   margin: 0 auto;
+  height: 100%;
 }
 
 .main-logo {
@@ -66,10 +65,6 @@ header {
   float: left;
   padding-top: 32px;
   padding-bottom: 32px;
-}
-
-.main-logo > svg {
-  width: 190px;
 }
 
 .main-logo-sm {
@@ -134,7 +129,6 @@ nav > ul > li:last-child > a:hover {
   text-decoration: none;
   font-weight: 500;
   font-size: 18px;
-  color: #252525;
   background-color: white;
   letter-spacing: -0.5px;
   border-bottom-width: 0.25em;
@@ -147,6 +141,7 @@ nav > ul > li:last-child > a:hover {
   padding-bottom: 0px;
 }
 
+/* Main stylings */
 main {
   padding-top: 129px;
   margin: 0 auto;
@@ -154,9 +149,75 @@ main {
   width: 100%;
 }
 
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+input {
+  font-size: 20px;
+  margin: 0 auto;
+  -webkit-appearance: none;
+  display: table;
+  background-color: white;
+  color: #252525;
+  width: 300px;
+  height: 40px;
+  border: 3px solid black;
+  border-radius: 30px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+#name-input, #message-input {
+  color: rgba(37, 37, 37, 0.5);
+  border-radius: 0px;
+  text-align: left;
+  border: 1px solid rgba(37, 37, 37, 0.5);
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+  font-size: 18px;
+}
+
+#name-input {
+  margin-top: 91px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+#message-input {
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+#submit {
+  margin-top: 32px;
+  margin-bottom: 91px;
+  height: 60px;
+}
+
+#success, #fail {
+  display: none;
+}
+
+.black-button {
+  background-color: #252525;
+  color: white;
+  border-radius: 30px;
+  padding: 13px 32px 13px 32px;
+  border-color: #252525;
+}
+
+/* Home Page stylings */
 .hero {
   background-color: #C5D2D3;
-  color: #252525;
 }
 
 .hero-container {
@@ -174,23 +235,6 @@ main {
   padding-left: 80px;
   display: block;
   width: 40%;
-}
-
-.quote {
-  align-items: center;
-  max-width: 1401px;
-  margin: 0 auto;
-  background-image: url(../img/light-pattern.png);
-  height: 500px;
-  overflow: hidden;
-}
-
-.quote-text {
-  padding-left: 200px;
-  padding-right: 200px;
-  padding-top: 140px;
-  padding-bottom: 140px;
-  text-align: center;
 }
 
 .hero-image {
@@ -217,6 +261,24 @@ main {
   background-color: #252525;
 }
 
+.quote {
+  align-items: center;
+  max-width: 1401px;
+  margin: 0 auto;
+  background-image: url(../img/light-pattern.png);
+  height: 500px;
+  overflow: hidden;
+}
+
+.quote-text {
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 140px;
+  padding-bottom: 140px;
+  text-align: center;
+}
+
+/* FAQ Page Stylings */
 .faq-container {
   max-width: 1401px;
   margin: 0 auto;
@@ -228,29 +290,16 @@ main {
   color: #252525;
 }
 
+/* Contact Page Stylings */
 .contact-container {
-  max-width: 1219px;
+  max-width: 1401px;
   margin: 0 auto;
-  width: 100%;
-}
-
-.flex {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
-  margin: 0 auto;
-  width: 100%;
-}
-
-.contact-left {
+  padding-top: 91px;
   padding-left: 91px;
   padding-right: 91px;
-  margin: auto;
-  width: 50%;
 }
 
-.contact-right {
+.contact-left, .contact-right {
   padding-left: 91px;
   padding-right: 91px;
   margin: auto;
@@ -263,14 +312,19 @@ main {
   height: 59px;
 }
 
-.contact-circle > a {
-  padding-left: 13px;
-  padding-top: 13px;
-  padding-bottom: 13px;
+.contact-circle > a > h2, .contact-circle > h2 {
+  padding-left: 16px;
+  height: 100%;
+  margin-block-end: 0;
+  margin-block-start: 8px;
 }
 
+.contact-circle > h2 {
+  margin-block-start: 0px;
+}
+
+/* About Page Stylings */
 .about-container {
-  overflow: hidden;
   max-width: 1401px;
   margin: 0 auto;
   padding: 91px;
@@ -288,63 +342,7 @@ main {
   padding-left: 40px;
 }
 
-input {
-      font-size: 20px;
-      margin: 0 auto;
-      -webkit-appearance: none;
-      display: table;
-      background-color: white;
-      color: #252525;
-      width: 300px;
-      height: 40px;
-      border: 3px solid black;
-      border-radius: 30px;
-      text-align: center;
-      vertical-align: middle;
-    }
-
-#name-input, #email-input, #message-input {
-  color: rgba(37, 37, 37, 0.5);
-  border-radius: 0px;
-  text-align: left;
-  border: 1px solid rgba(37, 37, 37, 0.5);
-  margin-top: 10px;
-  padding: 10px;
-  width: 444px;
-  font-size: 18px;
-}
-
-#name-input {
-  margin-top: 91px;
-  margin-bottom: 0px;
-}
-
-#message-input {
-  margin-top: 10px;
-  padding-top: 10px;
-}
-
-#submit {
-  margin-top: 32px;
-  margin-bottom: 91px;
-  height: 60px;
-}
-
-#success, #fail {
-  display: none;
-}
-
-.black-button {
-  background-color: #252525;
-  color: white;
-  border-radius: 30px;
-  padding-top: 13px;
-  padding-bottom: 13px;
-  padding-left: 32px;
-  padding-right: 32px;
-  border-color: #252525;
-}
-
+/* Footer Stylings */
 footer {
   height: 365px;
   background-color: #252525;
@@ -390,7 +388,7 @@ footer {
 
 /* Override: On screens that are 1410px or less */
 @media screen and (max-width: 1410px) {
-  .about-container {
+  .about-container, .faq-container, .contact-container {
     padding: 40px;
   }
 }
@@ -410,15 +408,13 @@ footer {
 
 /* Override: On screens that are 1263px or less */
 @media screen and (max-width: 1263px) {
-  .
-
+  nav > ul > li {
+    padding-left: 24px;
+  }
 }
 
 /* Override: On screens that are 1120px wide or less */
 @media screen and (max-width: 1120px) {
-  nav > ul > li {
-    padding-left: 24px;
-  }
   .copyright {
     font-size: 0.8em;
   }
