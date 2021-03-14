@@ -397,6 +397,14 @@ footer {
   justify-content: space-evenly;
 }
 
+/* Override: On screens that are 1462px or less */
+@media screen and (max-width: 1462px) {
+  .side-by-side > h2 {
+    padding-left: 104px;
+    padding-right: 104px;
+  }
+}
+
 /* Override: On screens that are 1410px or less */
 @media screen and (max-width: 1410px) {
   .about-container, .faq-container, .contact-container, .work-container {
@@ -460,48 +468,45 @@ footer {
   .copyright {
     font-size: 0.8em;
   }
-
   .footer-container {
     padding-left: 24px;
     padding-right: 24px;
   }
-
   .hero-text {
     padding-left: 60px;
     width: 50%;
   }
-
   .hero-image {
     padding-left: 60px;
     width: 60%;
   }
-
   .blue-box>h2 {
     padding-left: 150px !important;
     padding-right: 150px !important;
   }
-
   .blue-box>svg {
     padding-top: 140px !important;
   }
-
   nav>ul>li>a {
     font-size: 16px;
   }
-
   nav>ul>li:first-child>a {
     padding-left: 0px;
   }
-
   nav>ul>li:last-child>a {
     padding-top: 13px;
     padding-bottom: 13px;
     padding-left: 24px;
     padding-right: 24px;
   }
-
   .main-logo>svg {
     width: 200px;
+  }
+  .services {
+    flex-basis: 100%;
+  }
+  .service1, .service2 {
+    margin-bottom: 40px;
   }
 }
 
