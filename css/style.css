@@ -353,6 +353,10 @@ input {
   width: 48% !important;
 }
 
+.three-side-by-side {
+  width: 30% !important;
+}
+
 /* Footer Stylings */
 footer {
   height: 365px;
