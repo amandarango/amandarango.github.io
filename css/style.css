@@ -508,6 +508,9 @@ footer {
   .service1, .service2 {
     margin-bottom: 20px;
   }
+  .green-rectangle {
+    display: none;
+  }
 }
 
 /* Override: On screens that are 1024px wide or less */
