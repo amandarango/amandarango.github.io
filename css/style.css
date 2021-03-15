@@ -707,6 +707,12 @@ h2 {
     width: 400px;
     height: auto;
   }
+  .choose-package {
+    align-items: flex-start !important;
+  }
+  .choose-package > ul {
+    margin: 0;
+  }
 }
 
 /* Override: On screens that are 800px wide or less */
@@ -770,6 +776,13 @@ h2 {
   }
   .side-by-side {
     flex-basis: 100%;
+  }
+}
+
+/* Override: On screens that are 700px wide or less */
+@media screen and (max-width: 700px) {
+  .choose-package > ul {
+    padding-inline-start: 40px !important;
   }
 }
 
@@ -889,5 +902,29 @@ h2 {
   }
   .about-container-xs > picture > img {
     height: 400px;
+  }
+  .choose-package > img {
+    display:none;
+  }
+  .pkg-peace {
+    background-image: url(../img/peace-circle-sm.png);
+    background-repeat: no-repeat;
+    padding: 20px !important;
+  }
+  .pkg-joy {
+    background-image: url(../img/joy-circle-sm.png);
+    background-repeat: no-repeat;
+  }
+  .pkg-zen {
+    background-image: url(../img/zen-circle-sm.png);
+    background-repeat: no-repeat;
+  }
+  .pkg-lotus {
+    background-image: url(../img/lotus-circle-sm.png);
+    background-repeat: no-repeat;
+  }
+  .service3 {
+    padding-left: 10px;
+    padding-top: 10px;
   }
 }
