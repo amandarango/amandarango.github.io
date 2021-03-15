@@ -411,7 +411,7 @@ footer {
 
 /* Override: On screens that are 1410px or less */
 @media screen and (max-width: 1410px) {
-  .about-container, .faq-container, .contact-container, .work-container {
+  .about-container, .faq-container, .work-container {
     padding: 40px;
   }
 }
@@ -717,6 +717,25 @@ h2 {
   .choose-package > ul {
     margin: 0;
   }
+  .contact-right, .contact-left {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .contact-right > form {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+  }
+  .contact-container > .flex {
+    flex-wrap: wrap;
+    padding-top:40px;
+  }
+  #submit {
+    margin: 0 auto;
+  }
+  .content-right {
+    margin-bottom: 40px;
+  }
 }
 
 /* Override: On screens that are 800px wide or less */
@@ -789,6 +808,27 @@ h2 {
     padding-inline-start: 40px !important;
   }
 }
+
+/* Override: On screens that are 630px wide or less */
+@media screen and (max-width: 630px) {
+  .contact-container {
+    padding-top: 40px !important;
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+  }
+  .contact-left {
+    padding: 0px;
+  }
+  .contact-circle > img {
+    width: 45px;
+    height: 45px;
+    display: block;
+  }
+  .contact-circle > a > h2, .contact-circle > h2 {
+    font-size: 14px;
+  }
+}
+
 
 /* Override: On screens that are 510px wide or less */
 @media screen and (max-width: 510px) {
