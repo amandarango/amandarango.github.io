@@ -950,6 +950,9 @@ h2 {
   .choose-package > img {
     display:none;
   }
+  .choose-package > ul > li {
+    font-size:16px !important;
+  }
   .pkg-peace {
     background-image: url(../img/peace-circle-sm.png);
     background-repeat: no-repeat;
@@ -958,14 +961,17 @@ h2 {
   .pkg-joy {
     background-image: url(../img/joy-circle-sm.png);
     background-repeat: no-repeat;
+    padding: 20px !important;
   }
   .pkg-zen {
     background-image: url(../img/zen-circle-sm.png);
     background-repeat: no-repeat;
+    padding: 20px !important;
   }
   .pkg-lotus {
     background-image: url(../img/lotus-circle-sm.png);
     background-repeat: no-repeat;
+    padding: 20px !important;
   }
   .service3 {
     padding-left: 10px;
