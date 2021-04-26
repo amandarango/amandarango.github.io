@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="78px" height="78px" viewBox="0 0 78 78" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>home</title>
+    <g id="services-v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Services-" transform="translate(-933.000000, -1410.000000)">
+            <g id="Group-43" transform="translate(812.000000, 1410.000000)">
+                <g id="home" transform="translate(121.500000, 0.000000)">
+                    <ellipse id="Oval" fill="#F3D1C8" cx="38.5" cy="38.6072423" rx="38.5" ry="38.6072423"></ellipse>
+                    <path d="M21,32.0891365 L39,18.0501393 L57,32.0891365 L57,54.1504178 C57,56.3657104 55.209139,58.1615599 53,58.1615599 L25,58.1615599 C22.790861,58.1615599 21,56.3657104 21,54.1504178 L21,32.0891365 Z" id="Path" stroke="#F3D1C8" stroke-width="4" fill="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <polyline id="Path" stroke="#F3D1C8" stroke-width="4" fill="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" points="33 56.1559889 33 38.1058496 45 38.1058496 45 56.1559889"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
